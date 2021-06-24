@@ -1,0 +1,49 @@
+  /*Контакты заголовка*/
+.contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.header__contact__link {
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 1.15;
+   letter-spacing: 0.02em;
+   color: var(--text-color);
+   display: flex;
+   align-items: center;
+   margin-left: 50px;
+   transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
+.contact-item {
+display: inline;
+}
+ 
+.header__icon__envelope {
+display: inline-block;
+width: 16px;
+height: 12px;
+margin-right: 10px;
+cursor: pointer;
+fill: currentcolor;
+}
+
+.header__icon__phone {
+width: 10px;
+height: 16px;
+fill: currentcolor;
+cursor: pointer;
+margin-right: 10px;
+}
