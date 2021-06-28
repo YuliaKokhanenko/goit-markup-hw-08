@@ -79,4 +79,9 @@ border-radius: 2px;
 background-color: var(--accent-color);
 }
 
-
+@media screen and (min-width: 1200px) {
+.header__contact__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+}
