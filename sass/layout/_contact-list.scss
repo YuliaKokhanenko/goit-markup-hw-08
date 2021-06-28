@@ -3,6 +3,35 @@
     display: none;
 }
 
+.contact__list:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.contact__item__tel {
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color:var(--accent-color); 
+}
+
+.contact__item__mail {
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+@media screen and (min-width: 480px) {
+    .contact__item__mail {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .contact__item__tel {
+        font-size: 34px;
+    }
+}
   /*.contact-list {
     display: flex;
     align-items: center;
