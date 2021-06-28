@@ -1,0 +1,139 @@
+
+   
+
+   /*------Шрифты--------*/
+
+
+
+
+
+   
+   /*=====================Header===================================*/
+ 
+
+   /*---------Логотип-- WebStudio-----------------*/
+
+ /*Навигационный лист*/
+      
+
+
+ 
+   /*====================The end header======================*/
+   
+   /*-----------------------HERO----------------------*/
+/*добавление фона---*/
+/*.overlay{
+    height: 600px;
+   /* left: 0px;
+    top: 80px;*/
+  /* background: #C4C4C4;
+    /*background-image: url(../images/icons/imgheader.jpg);*/
+   /* background-repeat: no-repeat;
+    /*background-position: center;*/
+   
+    /* background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4)),
+    url(../images/icons/Imgheader.jpg);
+    background-size: cover;
+}*/
+
+
+   /*Эффективные решения для вашего бизнеса*/
+  
+   
+   /*-----------Description--------------------*/
+  
+   /*Особенности*/
+
+/*-----------Gallery-------------------*/
+
+   /*----------------TEAM---------------*/
+   
+
+   /*------------End Hero----------------*/
+  /*-------------Постоянные клиенты---------------*/
+ 
+
+
+
+   /*-----------------Footer---------*/
+
+   /*==================Footer=================*/
+   
+
+   /*----------------Portfolio-------------*/
+   /*Кнопки*/
+
+
+ 
+/*.current-item{
+color:var(--accent-color);
+}*/
+   
+
+
+
+
+/*.picture-list{
+    width: calc((100% - 90px) / 3);
+    margin-top: 30px;
+    margin-left: 30px;
+}*/
+
+
+  
+
+
+
+
+
+
+
+
+   /*=========================End=================*/
+   /*------------Модальное окно----------------*/
+  
+
+   
+
+
+
+
+
+
+/*.modal-form-checkbox:checked + .modal-form-checkbox-policy:before{
+    background-image: url("../images/check.svg");
+}*/
+
+
+/*********стили при наведении курсора на чекбокс-policy****/
+/*.modal-form-checkbox:not(:disabled):not(checked) + label:hover {
+    border-color: #b3d7ff;
+}*/
+
+/*****стили для активного состояния чекбокса (при нажатии на него )****/
+/*.modal-form-checkbox:not(:disabled):active + label::before{
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}*/
+
+/*********стили чекбокса, находящегося в фокусе и не находящегося в состоянии checked*/
+
+/*.modal-form-checkbox:focus:not(:checked) + label::before{
+    border-color: #80bdff;
+}*/
+
+/****стили чекбокса, находящегося в состоянии disabled*/
+/*.modal-form-checkbox:disabled + label::before {
+    background-color: #e9ecef;
+}*/
+
+
+
+/*
+.input-modal-text:required:focus:valid{
+    border-color: green;
+}
+.input-modal-text:required:focus:invalid{
+    border-color: red;
+}*/
+
