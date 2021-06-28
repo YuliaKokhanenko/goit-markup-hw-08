@@ -49,20 +49,24 @@
                         +38 096 111 11 11</a>
                     </li>
                 </ul>
-                <div class="mobile-menu" data-menu>
+                <div class="mobile-menu is-open" data-menu>
                     <div class="container mobile-menu__container">
                     <button type="button" class="mobile-menu__button-close" data-menu-close>
-                    <ul class="mobile-menu__nav list">
-                    <li class="mobile-menu__list">
-                    <a class="mobile-menu__item link current-item" href="./index.html">Студия</a>
-                     </li>
-                    <li class="mobile-menu__lis">
-                    <a class="mobile-menu__item link" href="./portfolio">Портфолио</a>
-                    </li>
-                    <li class="mobile-menu__list">
-                    <a class="mobile-menu__item link" href="#">Контакты</a>
-                    </li>
-                    </ul>
+                        <svg class="mobile-menu__button-close__mobile-icon-close">
+                            <use href="./images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                        <ul class="mobile-menu__nav list">
+                            <li class="mobile-menu__list">
+                                <a class="mobile-menu__item link current-item" href="./index.html">Студия</a>
+                            </li>
+                            <li class="mobile-menu__lis">
+                            <a class="mobile-menu__item link" href="./portfolio">Портфолио</a>
+                            </li>
+                            <li class="mobile-menu__list">
+                            <a class="mobile-menu__item link" href="#">Контакты</a>
+                            </li>
+                        </ul>
                     <div>
                         <ul class="mobile-menu__contact list">
                             <li class="contact__list">
@@ -86,9 +90,9 @@
                                 <a class="mobile-menu__social__item link" href="https://www.linkedin.com/">LinkedIn</a>
                             </li>
                         </ul>
-                    </div>
-                </div>
-                    </button>
+                        </div>
+                        </div>
+                    
                     </div>    
         </div>
     </header>
@@ -512,5 +516,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
