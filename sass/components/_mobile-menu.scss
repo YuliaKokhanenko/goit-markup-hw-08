@@ -106,7 +106,7 @@ display: none;
     margin-bottom: 32px;
 }
 
-.mobile-menu__list {
+.mobile-menu__item {
     font-weight: 500;
     font-size: 30px;
     line-height: 1.18;
@@ -118,7 +118,13 @@ display: none;
 }
 
 @media screen and (min-width: 480px) {
-    .mobile-menu__list {
+    .mobile-menu__item {
         font-size: 40px;
     }
+}
+
+.mobile-menu__contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 48px;
 }
