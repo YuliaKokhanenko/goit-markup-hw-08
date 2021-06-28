@@ -27,6 +27,11 @@
                     <li class="header__nav__item"><a class="nav__link__item link" href="#" lang="ru">Контакты</a></li>
                 </ul>
             </nav>
+            <!----<button type="button" class="modal-menu__button" data-menu-button>
+                <svg width="40" height="40" class="modal-menu__button__modal-icon-open">
+                    <use href="./images/sprite.svg#icon-menu_40px"></use>
+                </svg>
+            </button>--->
                 <ul class="contact-list list">
                     <li class="header__contact__item">
                         <a class="header__contact__link link" href="mailto:info@devstudio.com">
@@ -100,21 +105,30 @@
             </div>
         </section>
         <!------------------Gallery----------------------------->
-        <section class="picture">
+        <section class="section__our-work">
             <div class="container">
-                <h2 class="picture__title" lang="ru">Чем мы занимаемся</h2>
-                <ul class="picture__list__gallery flex list">
-                    <li class="picture__list__item">
-                        <img class="picture__list__img" src="./images/занятия/box1.jpg" alt="набор текста на компьютере" width="370" height="294">
-                    <p class="picture__title__p">Десктопные приложения</p>
+                <h2 class="section__our-work__title" lang="ru">Чем мы занимаемся</h2>
+                <ul class="section__our-work__list__gallery flex list">
+                    <li class="section__our-work__list__item">
+                        <picture class="our-work__picture">
+                            <source srcset="./images/занятия/box1.jpg 1x, ./images/занятия/box1@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="section__our-work__list__img" alt="набор текста на компьютере" width="370" height="294">
+                        </picture>   
+                        <p class="section__our-work__title__p">Десктопные приложения</p>
                     </li>
-                    <li class="picture__list__item">
-                        <img class="picture__list__img" src="./images/занятия/box2.jpg" alt="робота за ноутбуком" width="370" height="294">                  
-                    <p class="picture__title__p">Мобильные приложения</p>
+                    <li class="section__our-work__list__item">
+                        <picture class="our-work__picture">
+                            <source srcset="./images/занятия/box2.jpg 1x, ./images/занятия/box2@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="section__our-work__list__img" alt="робота за ноутбуком" width="370" height="294">                  
+                        </picture> 
+                        <p class="section__our-work__title__p">Мобильные приложения</p>
                     </li>
-                    <li class="picture__list__item">
-                        <img class="picture__list__img" src="./images/занятия/box3.jpg" alt="робота на планшете" width="370" height="294">
-                   <p class="picture__title__p">Дизайнерские решения</p>
+                    <li class="section__our-work__list__item">
+                        <picture class="our-work__picture">
+                            <source srcset="./images/занятия/box3.jpg 1x, ./images/занятия/box3@2x.jpg 2x" media="(min-width: 1200px)">
+                            <img class="section__our-work__list__img" alt="робота на планшете" width="370" height="294">
+                        </picture> 
+                        <p class="section__our-work__title__p">Дизайнерские решения</p>
                     </li>
                 </ul>
             </div>
@@ -125,8 +139,13 @@
                 <h2 class="section__title team__title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__list__item">
-                     <img class="team__list__img" src="./images/team/демьяненко.jpg " alt="Продуктолог" width="270" height="260">
-                        <div class="team__list__content">
+                        <picture class="team__list__card">
+                       <source srcset="./images/team/desktop/демьяненко.jpg 1x, ./images/team/desktop/демьяненко@2x.jpg 2x" media="(min-width: 1200px)">
+                        <source srcset="./images/team/tablet/демьяненко.jpg 1x, ./images/team/tablet/демьяненко@2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./images/team/mob/демьяненко.jpg 1x, ./images/team/mob/демьяненко@2x.jpg 2x" media="(min-width: 480px)">
+                            <img class="team__list__img" src="#" alt="Продуктолог">
+                    </picture>
+                     <div class="team__list__content">
                             <h3 class="team__title__list__name">Игорь Демьяненко</h3>
                             <p class="team__title__list__desc">Product Designer</p>
                             <ul class="social__list list">
@@ -162,7 +181,12 @@
                         </div>
                     </li>
                     <li class="team__list__item"> 
-                        <img class="team__list__img" src="./images/team/репина.jpg" alt="Разработчик" width="270" height="260">
+                        <picture class="team__list__card">
+                            <source srcset="./images/team/desktop/репина.jpg 1x, ./images/team/desktop/репина@2x.jpg 2x" media="(min-width: 1200px)">
+                             <source srcset="./images/team/tablet/репина.jpg 1x, ./images/team/tablet/репина@2x.jpg 2x" media="(min-width: 768px)">
+                                 <source srcset="./images/team/mob/репина.jpg 1x, ./images/team/mob/репина@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="team__list__img" src="#" alt="Разработчик">
+                        </picture>
                         <div class="team__list__content">
                             <h3 class="team__title__list__name">Ольга Репина</h3>
                             <p class="team__title__list__desc">Frontend Developer</p>
@@ -199,7 +223,12 @@
                         </div>
                     </li>
                     <li class="team__list__item">
-                        <img class="team__list__img" src="./images/team/тарасов.jpg" alt="Маркетинг" width="270" height="260">
+                        <picture class="team__list__card">
+                            <source srcset="./images/team/desktop/тарасов.jpg 1x, ./images/team/desktop/тарасов@2x.jpg 2x" media="(min-width: 1200px)">
+                             <source srcset="./images/team/tablet/тарасов.jpg 1x, ./images/team/tablet/тарасов@2x.jpg 2x" media="(min-width: 768px)">
+                                 <source srcset="./images/team/mob/тарасов.jpg 1x, ./images/team/mob/тарасов@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="team__list__img" src="#" alt="Маркетинг">
+                        </picture>
                         <div class="team__list__content">
                             <h3 class="team__title__list__name">Николай Тарасов</h3>
                             <p class="team__title__list__desc">Marketing</p>
@@ -236,7 +265,12 @@
                         </div>
                     </li>
                     <li class="team__list__item">
-                        <img class="team__list__img" src="./images/team/ермаков.jpg" alt="Проэктировщик" width="270" height="260">
+                        <picture class="team__list__card">
+                            <source srcset="./images/team/desktop/ермаков.jpg 1x, ./images/team/desktop/ермаков@2x.jpg 2x" media="(min-width: 1200px)">
+                             <source srcset="./images/team/tablet/ермаков.jpg 1x, ./images/team/tablet/ермаков@2x.jpg 2x" media="(min-width: 768px)">
+                                 <source srcset="./images/team/mob/ермаков.jpg 1x, ./images/team/mob/ермаков@2x.jpg 2x" media="(min-width: 480px)">
+                        <img class="team__list__img" src="#" alt="Проэктировщик">
+                        </picture>
                         <div class="team__list__content">
                             <h3 class="team__title__list__name">Михаил Ермаков</h3>
                             <p class="team__title__list__desc">UI Designer</p>
@@ -283,9 +317,9 @@
     <h2 class="section__title client__title">Постоянные клиенты</h2>
     <ul class="client__list list">
         <li class="client__item list">
-            <a href="#" class="client__logo">
-            <svg class="clien__logo__item">
-            <use href="./images/sprite.svg#icon-logo-yako"></use>
+            <a href="" class="client__logo">
+            <svg class="client__logo__item">
+            <use href="./images/sprite.svg#icon-yako"></use>
             </svg>
             </a>
         </li>
