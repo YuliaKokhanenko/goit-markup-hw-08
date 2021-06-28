@@ -44,6 +44,15 @@
     margin-right: 10px;
 }
 
+.contact-item {
+display: inline;
+}
+    
+.contact-item:not(:last-child) {
+    margin-right: 50px;
+    justify-content: space-between;
+}
+
 @media screen and (min-width: 768px) {
     .contact-list {
         display: flex;
@@ -63,24 +72,14 @@
     padding-top: 32px;
     padding-bottom: 32px;
     }
-    .contact-item:not(:last-child) {
-        margin-right: 50px;
-        /*justify-content: space-between;*/
-    }
 }
-
-/*.contact-item {
-display: inline;
-}
-
-.contact-item:not(:last-child) {
-    margin-right: 50px;
-    justify-content: space-between;
-}
- */
 
 @media screen and (min-width: 1200px) {
     .header__contact__item + .contact-item {
         margin-left: 50px;
     }
 }
+
+
+ 
+
