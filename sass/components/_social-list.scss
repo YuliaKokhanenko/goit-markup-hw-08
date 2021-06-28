@@ -4,12 +4,16 @@
   }
   
   .social__list {
-    align-items: center;
+    justify-content: center;
     display: flex;
   }
   
   .social__list__item:not(:last-child) {
     margin-right: 10px;
+  }
+
+  .social__list__item {
+    border-radius: 50%;
   }
   
   .social__list__link {
