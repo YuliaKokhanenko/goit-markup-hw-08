@@ -763,20 +763,6 @@ body {
     align-items: center;
     margin-left: auto;
 }*/
-@media screen and (min-width: 768px) {
-  .contact-list {
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .contact-list {
-    flex-direction: row;
-  }
-}
-
 .header__contact__link {
   display: flex;
   align-items: center;
@@ -793,6 +779,37 @@ body {
 
 .header__contact__link:hover, .header__contact__link:focus {
   color: var(--accent-color);
+}
+
+.header__icon__envelope {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  fill: currentcolor;
+}
+
+.header__icon__phone {
+  width: 10px;
+  height: 16px;
+  fill: currentcolor;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-list {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -815,23 +832,6 @@ display: inline;
     justify-content: space-between;
 }
  */
-.header__icon__envelope {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  cursor: pointer;
-  fill: currentcolor;
-}
-
-.header__icon__phone {
-  width: 10px;
-  height: 16px;
-  fill: currentcolor;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
 @media screen and (min-width: 1200px) {
   .header__contact__item + .contact-item {
     margin-left: 50px;
