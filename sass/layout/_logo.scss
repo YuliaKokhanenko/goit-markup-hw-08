@@ -6,26 +6,21 @@
    letter-spacing: 0.03em;
    color: var(--secondary-color); 
    display: inline-block;
-   margin-right: 70px;
  }
 
- .logo__header {
-  /*color: var(--text-color-full-black);
-  padding-top: 16px;
-  padding-bottom: 16px;*/
-   color: var(--secondary-color);
-   margin-right: 93px;
-   padding-top: 24px;
-   padding-bottom: 25px;
- }
-
-/* @media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
   .logo__header {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
-}*/
+ }
+
+ .logo__header {
+  color: var(--text-color-full-black);
+  padding-top: 16px;
+  padding-bottom: 16px;
+ }
 
  .logo__item {
    color: var(--accent-color);
