@@ -160,6 +160,43 @@ body {
   fill: var(--text-decoration-color);
 }
 
+.mobile-menu__social {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 34px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-menu__social__list {
+  width: calc((100% - 20px) / 2);
+  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__social__list {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-menu__social__list {
+    font-size: 0;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+.mobile-menu__social__item {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -660,7 +697,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 32px;
 }
 
-.mobile-menu__list {
+.mobile-menu__item {
   font-weight: 500;
   font-size: 30px;
   line-height: 1.18;
@@ -672,9 +709,15 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 480px) {
-  .mobile-menu__list {
+  .mobile-menu__item {
     font-size: 40px;
   }
+}
+
+.mobile-menu__contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 48px;
 }
 
 .page-header {
@@ -877,6 +920,36 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 /*Контакты заголовка*/
 .contact-list {
   display: none;
+}
+
+.contact__list:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contact__item__tel {
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.contact__item__mail {
+  font-size: 20px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .contact__item__mail {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .contact__item__tel {
+    font-size: 34px;
+  }
 }
 
 /*.contact-list {
