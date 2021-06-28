@@ -1,3 +1,7 @@
+.modal-menu__button {
+display: none;
+}
+
 @media screen and (max-width: 767px) {
 .modal-menu__button {
 display: block;
@@ -9,4 +13,20 @@ transition-property: color, fill;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-menu__button__modal-icon-open{
+    width: 40px;
+    height: 40px;
+    fill: currentColor;
+    line-height: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .modal-menu__button:hover,
+    .modal-menu__button:focus {
+        color: var(--accent-color);
+    }
 }
