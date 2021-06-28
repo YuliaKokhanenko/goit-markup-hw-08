@@ -3,6 +3,10 @@
     background-color: var( --icon-background-color);
 }
 
+.team__title__hidden {
+    margin-bottom: 50px;
+}
+
 .team__list {
     display: flex;
     flex-wrap: wrap;
@@ -60,7 +64,6 @@
 }*/
 
 .team__title__list__name {
-   /*font-family: inherit;*/
    font-weight: 500;
    font-size: 16px;
    line-height: 1.18;
@@ -70,16 +73,16 @@
    display: block;
 }
    
-.team__title__list__desc {
-   /*font-family:inherit;*/
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.18;
-   letter-spacing: 0.03em;
-   color: var(--text-color);
-   margin-bottom: 16px;
-   display: block;
-}
+team__title__list__desc {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    margin-bottom: 16px;
+    display: block;
+  }
 
 .team__list__content {
     padding: 30px 32px;
