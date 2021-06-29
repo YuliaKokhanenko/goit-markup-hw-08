@@ -19,3 +19,13 @@
     font-size: 36px;
   }
 }
+
+.section__our-work__title__hidden {
+  margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__our-work__title {
+    font-size: 36px;
+  }
+}
