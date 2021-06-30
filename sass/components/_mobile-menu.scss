@@ -100,13 +100,12 @@
 }
 
 
-/*.mobile-menu__container {
+.mobile-menu__container {
     position: relative;
     padding-left: 25px;
     padding-top: 48px;
     padding-bottom: 48px;
 }
-
 
 .mobile-menu__button-close__mobile-icon-close {
     position: absolute;
@@ -119,8 +118,6 @@
     background-color: transparent;
 }
 
-
-
 @media screen and (max-width: 767px) {
     .mobile-menu .is-open{
     opacity: 1;
@@ -129,7 +126,7 @@
     }  
 }
 
-.mobile-menu {
+/*.mobile-menu {
 display: none;
 }
 
