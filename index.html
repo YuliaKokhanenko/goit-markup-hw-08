@@ -478,14 +478,16 @@
         </button>
         <form action="#" class="modal-form">
             <p class="modal-form__text">Оставьте свои данные, мы вам перезвоним</p>
-            <label for="name" class="modal-form__text-field">Имя</label>
-            <div class="modal-form__input">
-            <input id="name" class="modal-form__input-text" type="text" name="user-name" required>
-            <svg class="modal-form__input__icon person">
-            <use href="./images/sprite.svg#icon-person-black-18dp"></use>
-            </svg>
-            </div>
-            <label for="tell" class="modal-form__text-field">Телефон</label>
+            <div class="modal-form__choose">
+                <div class="modal-form__choose-field">
+                <label for="name" class="modal-form__text-field">Имя</label>
+                <div class="modal-form__input">
+                <input id="name" class="modal-form__input-text" type="text" name="user-name" required>
+                <svg class="modal-form__input__icon person">
+                <use href="./images/sprite.svg#icon-person-black-18dp"></use>
+                </svg>
+                </div>
+                <label for="tell" class="modal-form__text-field">Телефон</label>
                 <div class="modal-form__input">
                 <input id="tell" class="modal-form__input-text" type="tel" name="user-tel" required>
                 <svg class="modal-form__input__icon phone">
@@ -499,10 +501,14 @@
                 <use href="./images/sprite.svg#icon-email-black-18dp"></use>
             </svg>
         </div>
+    </div>
+</div>
+<div class="modal-form__textarea">
         <label for="comment" class="modal-form__text-field">Комментарий</label>
             <textarea id="comment" class="modal-form__input__textarea" name="user-comment" placeholder="Введите текст"></textarea>
-            <div class="modal-form__agree-terms">
-            <input type="checkbox" name="user-policy"  id="checkbox-policy" class="modal-form__checkbox" checked>
+        </div>
+            <div class="modal-form__agree-terms private-policy">
+            <input type="checkbox" name="user-policy"  id="checkbox-policy" class="modal-form__checkbox" required>
                 <label for="checkbox-policy" class="modal-form__checkbox-policy">
                    <span class="modal-form__text-policy">
                     Соглашаюсь с рассылкой и принимаю
