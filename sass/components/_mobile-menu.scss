@@ -1,3 +1,7 @@
+.mobile-menu {
+    display: none;
+}
+
 .mobile-menu__button {
     display: none;
   }
@@ -24,7 +28,7 @@
     }
   }
 
-.mobile-menu {
+/*.mobile-menu {
     position: fixed;
     top: 0;
     left: 0;
@@ -32,7 +36,10 @@
     height: 100vh;
     background-color: var(--text-decoration-color);
     overflow: auto;
-}
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}*/
 
 @media screen and (max-width: 767px) {
     .mobile-menu {
@@ -152,24 +159,3 @@
     }  
 }
 
-/*.mobile-menu {
-display: none;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.mobile-menu__contact {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 48px;
-}*/
