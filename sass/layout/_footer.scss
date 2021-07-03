@@ -4,6 +4,7 @@
    padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .footer-flex {
   align-items: baseline;
 }
@@ -20,7 +21,7 @@ color: var(--text-decoration-color);
   display: flex;
   align-items: center;
   flex-direction: column;
-  }
+}
 
 .footer__address__contact {
 font-style: normal;
@@ -30,12 +31,12 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-center-item {
+/*.footer-center-item {
 display: flex;
 flex-wrap: wrap;
  align-items: center;
 flex-direction: column;
-}
+}*/
 
 // @media screen and (min-width: 768px) {
 //   .footer-flex {
@@ -46,10 +47,10 @@ flex-direction: column;
 // }
 
 
-// .footer__list {
-//   align-items: center;
-//   margin-left: 73px;
-// }
+.footer__list {
+align-items: center;
+margin-left: 73px;
+}
 
 .footer__logo {
 color: var(--accent-color);
