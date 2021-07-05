@@ -16,6 +16,14 @@
     margin-bottom: 30px;
     min-height: 120px;
 }
+// .desc__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding-bottom: 0;
+//     margin: 0 auto;
+//     /*margin-left: -30px;
+//     margin-top: -30px;*/
+// }
 
 .desc__list__title {
 font-size: 14px;
@@ -39,13 +47,7 @@ margin-bottom: 10px;
     .desc__list__item {
         width: calc((100% - 60px) / 2);
     }
-    .desc__list {
-        display: flex;
-        flex-wrap: wrap;
-        padding-bottom: 0;
-        margin-left: -30px;
-        margin-top: -30px;
-    }
+    
 }
 //1200+
 @media screen and (min-width: 1200px) {
@@ -56,65 +58,66 @@ margin-bottom: 10px;
         text-align: start;
     }
 }
-//.desc {
-//padding-top: 94px;
-//padding-bottom: 47px;
-//}
+.desc {
+padding-top: 94px;
+padding-bottom: 47px;
+}
 
-//.container .desc__list {
-//    display: flex;
-//    flex-wrap: wrap;
-//    padding-bottom: 0;
-//}
+.container .desc__list {
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 0;
+}
 
-//@media screen and (min-width: 768px) {
-//    .container .desc__list {
-//    margin-top: -30px;
-//    margin-left: -30px;
-//    }
-//}
+@media screen and (min-width: 768px) {
+   .container .desc__list {
+   margin-top: -30px;
+   margin-left: -30px;
+   }
+}
 
-//@media screen and (min-width: 1200px) {
-//    .container .desc__list {
-//    margin-top: -30px;
-//    margin-left: -30px;
-//    }
-//}
+.desc__list__item {
+   width: 100%;
+}
 
-//.desc__list__item {
-//    width: 100%;
-//}
+.desc__list__item:not(:last-child) {
+   margin-bottom: 30px;
+}
+.desc__list__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    background-color: var(--icon-background-color);
+ }
+ 
+@media screen and (min-width: 768px) {
+   .desc__list__item {
+   width: calc((100% - 60px) / 2);
+   margin-top: 30px;
+   margin-left: 30px;
+   }
+}
+//1200+
+@media screen and (min-width: 1200px) {
+   .container .desc__list {
+   margin-top: -30px;
+   margin-left: -30px;
+   }
+}
 
-//.desc__list__item:not(:last-child) {
- //   margin-bottom: 30px;
-//}
+@media screen and (min-width: 1200px) {
+   .desc__list__item {
+   width: calc((100% - 120px) / 4);
+   margin-top: 30px;
+   margin-left: 30px;
+   }
+}
 
-//@media screen and (min-width: 768px) {
- //   .desc__list__item {
-//    width: calc((100% - 60px) / 2);
-//    margin-top: 30px;
-//    margin-left: 30px;
-//    }
-//}
 
-//@media screen and (min-width: 1200px) {
-//    .desc__list__item {
-//    width: calc((100% - 120px) / 4);
-//    margin-top: 30px;
-//    margin-left: 30px;
-//    }
-//}
-
-//.desc__list__icon {
-//    display: flex;
- //   align-items: center;
-//    justify-content: center;
- //   width: 100%;
- //   height: 120px;
-//    border-radius: 4px;
-//    margin-bottom: 30px;
-//    background-color: var(--icon-background-color);
-//}
 
 //.desc__list__title {
 //    font-size: 14px;
@@ -126,11 +129,11 @@ margin-bottom: 10px;
 //    margin-bottom: 10px;
 //}
 
-//media screen and (min-width: 768px) {
- //   .desc__list__title {
- //       text-align: start;
- //   }
-//}
+// @media screen and (min-width: 768px) {
+//    .desc__list__title {
+//        text-align: start;
+//    }
+// }
 
 //@media screen and (min-width: 768px) {
 //    .desc__list__title {
