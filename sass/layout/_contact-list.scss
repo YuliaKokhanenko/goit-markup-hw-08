@@ -1,8 +1,39 @@
   /*Контакты заголовка*/
-  /*.contact-list {
+  //320+
+  .contact-list {
     display: none;
-  }*/
+  }
+  .contact__item__tel {
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+    .contact__item__mail {
+    font-size: 20px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+  }
   
+  // .contact-list:not(:last-child) {
+  //   margin-bottom: 32px;
+  // }
+
+  //480+
+  @media screen and (min-width: 480px) {
+    .contact__item__tel {
+      font-size: 34px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    .contact__item__mail {
+      font-size: 24px;
+    }
+  }
+
+  //768+
   @media screen and (min-width: 768px) {
     .contact-list {
       display: flex;
@@ -10,11 +41,7 @@
       margin-left: auto;
     }
   }
-  @media screen and (min-width: 1200px) {
-    .contact-list {
-      flex-direction: row;
-    }
-  }
+
   .header__contact__link {
     display: flex;
     align-items: center;
@@ -32,55 +59,32 @@
     color: var(--accent-color);
   }
   
+  //1200+
+    @media screen and (min-width: 1200px) {
+    .contact-list {
+      flex-direction: row;
+    }
+  }
   @media screen and (min-width: 1200px) {
     .header__contact__link {
       padding-top: 32px;
       padding-bottom: 32px;
     }
   }
-  .header__icon__envelope {
-    display: inline-block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    /*cursor: pointer;*/
-    fill: currentcolor;
-  }
-  
+ 
   @media screen and (min-width: 1200px) {
     .header__contact__item + .header__contact__item {
       margin-left: 50px;
     }
   }
-  .contact__list:not(:last-child) {
-    margin-bottom: 32px;
-  }
+//   .contact__list:not(:last-child) {
+//     margin-bottom: 32px;
+//   }
   
-  .contact__item__tel {
-    font-size: 28px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-  }
   
-  @media screen and (min-width: 480px) {
-    .contact__item__tel {
-      font-size: 34px;
-    }
-  }
-  .contact__item__mail {
-    font-size: 20px;
-    line-height: 1.17;
-    letter-spacing: 0.02em;
-    color: var(--text-color);
-  }
-  
-  @media screen and (min-width: 480px) {
-    .contact__item__mail {
-      font-size: 24px;
-    }
-  }
-/*
+ 
+
+
 
 
 
