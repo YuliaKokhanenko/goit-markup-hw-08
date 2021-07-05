@@ -18,6 +18,11 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .section__our-work__title__hidden {
+    font-size: 36px;
+  }
+}
 .section__our-work__title__hidden {
   margin-bottom: 50px;
 }
