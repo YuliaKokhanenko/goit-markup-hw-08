@@ -67,7 +67,7 @@
                             <a class="mobile-menu__item link" href="#">Контакты</a>
                             </li>
                         </ul>
-                    <div>
+                    <div class="mobile-menu__box">
                         <ul class="mobile-menu__contact list">
                             <li class="contact-list">
                                 <a class="contact__item__tel link" href="tel:+380961111111">+38096 111 11 11</a>
@@ -92,10 +92,10 @@
                         </ul>
                         </div>
                         </div>
-                    </div>    
+                </div>    
         </div>
     </header> 
-  <!-----------<main>--->
+  <main>
         <!----------------------------HERO------------------>
       <section class="hero">
             <div class="container">
@@ -471,7 +471,7 @@
         </div>
     </div>
     </footer>
- <!-----   <div class="backdrop is-hidden" data-modal>
+     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
         <button class="modal-btn-close" data-modal-close type="button">
             <svg class="modal-btn-close__modal__icon">
@@ -485,44 +485,45 @@
                 <div class="modal-form__choose-field">
                 <label for="name" class="modal-form__text-field">Имя</label>
                 <div class="modal-form__input">
-                <input id="name" class="modal-form__input-text" type="text" name="user-name" required>
+                <input id="name" class="modal-form__input-text" type="text" name="user-name" placeholder="Имя" required>
                 <svg class="modal-form__input__icon person">
                 <use href="./images/sprite.svg#icon-person-black-18dp"></use>
                 </svg>
                 </div>
                 <label for="tell" class="modal-form__text-field">Телефон</label>
                 <div class="modal-form__input">
-                <input id="tell" class="modal-form__input-text" type="tel" name="user-tel" required>
+                <input id="tell" class="modal-form__input-text" type="tel" name="user-tel" placeholder="Телефон" required>
                 <svg class="modal-form__input__icon phone">
                 <use href="./images/sprite.svg#icon-phone-black-18dp"></use>
                 </svg>
                 </div>
         <label for="email" class="modal-form__text-field">Почта</label>
         <div class="modal-form__input">
-            <input id="email" class="modal-form__input-text" type="email" name="user-email" required>
+            <input id="email" class="modal-form__input-text" type="email" name="user-email" placeholder="Почта" required>
             <svg class="modal-form__input__icon email">
                 <use href="./images/sprite.svg#icon-email-black-18dp"></use>
             </svg>
         </div>
     </div>
-</div>
+
 <div class="modal-form__textarea">
         <label for="comment" class="modal-form__text-field">Комментарий</label>
             <textarea id="comment" class="modal-form__input__textarea" name="user-comment" placeholder="Введите текст"></textarea>
         </div>
+    </div>       
             <div class="modal-form__agree-terms private-policy">
             <input type="checkbox" name="user-policy"  id="checkbox-policy" class="modal-form__checkbox" required>
                 <label for="checkbox-policy" class="modal-form__checkbox-policy">
                    <span class="modal-form__text-policy">
                     Соглашаюсь с рассылкой и принимаю
-                    </span>
                     <a class="text-policy__link" href="#">Условия договора</a>
+                </span>
                 </label>
             </div>
         <button class="modal-btn-send" type="submit">Отправить</button>
         </form>
         </div>
-    </div>--->
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
