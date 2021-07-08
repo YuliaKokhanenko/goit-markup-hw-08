@@ -1,8 +1,16 @@
+@media screen and (max-width: 1199px) {
+.portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+}
 .portfolio__list {
+  display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     margin-top: -30px;
     margin-left: -30px;
+    justify-content: center;
   }
   
   .portfolio__item {
@@ -15,8 +23,8 @@
   }
   
   .portfolio__list__item {
-    width: calc((1200px - 90px) / 3);
     display: block;
+    width: 100%;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -25,7 +33,12 @@
     transform: translatey(0);
     }
   }
-
+//768+
+@media screen and (max-width: 767px) {
+  .portfolio__item {
+    width: 100%;
+  }
+}
   .portfolio__content__item__card {
     padding: 20px 20px;
     padding-left: 24px;
@@ -35,16 +48,24 @@
     border-left: 1px solid #EEEEEE;
   }
   
-  .portfolio__content__item__card {
-    position: relative;
-    overflow: hidden;
-  }
+//   .portfolio__content__item__card {
+//     position: relative;
+//     overflow: hidden;
+//   }
   
   .portfolio__list__wrapper {
     position: relative;
     overflow: hidden;
   }
+.portfolio__list__wrapper__card {
+  background-size: cover;
+}
 
+  @media screen and (min-width: 320px) {
+    .portfolio__list__wrapper__card {
+      width: 100%;
+    }
+  }
   .overlay-portfolio {
     position: absolute;
     width: 100%;
@@ -55,7 +76,7 @@
     color: #FFFFFF;
     background: rgba(33, 150, 243, 0.9);
     overflow: auto;
-    font-weight: 400;
+    // font-weight: 400;
     font-size: 18px;
     line-height: 1.56;
      /* or 156% */
@@ -71,4 +92,45 @@
  .portfolio__list__item:focus .overlay-portfolio {
  transform: translateY(0%);
  }
- 
+
+//768+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__list__item {
+    width: calc((768px - 60px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__list__wrapper__card {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__content__item__card {
+    min-height: 146px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio__item:last-child {
+    display: block;
+    margin-top: 30px;
+    margin-right: auto;
+  }
+}
+//1200+
+@media screen and (min-width: 1200px) {
+  .portfolio__list__item {
+    width: calc((1200px - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__list__wrapper__card {
+    width: 370px;
+  }
+}
+
+// @media screen and (min-width: 1200px) {
+//   .portfolio__item:last-child {
+//     margin-top: -30px;
+//   }
+// }
