@@ -178,13 +178,13 @@ color:var(--accent-color);
 .input-modal-text:required:focus:invalid{
     border-color: red;
 }*/
-<!-- <button id="myBtn" class="mobile-menu__button">
+/* <!-- <button id="myBtn" class="mobile-menu__button">
                     <svg width="40" height="40" class="mobile-menu__button__modal-icon-open">
                     <use href="./images/sprite.svg#icon-burger"></use>
                 </svg>
-            </button>
+            </button> */
 
-               <!-The Modal -->
+               /* <!-The Modal -->
                 <!-- <div id="myModal" class="modal">
                  -->
                   <!-- Модальное содержание -->
@@ -237,5 +237,5 @@ color:var(--accent-color);
                     </div>
                   </div>
                 
-                </div> --> 
+                </div> -->  */
 
