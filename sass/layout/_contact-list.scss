@@ -54,9 +54,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .header__contact__link:hover, .header__contact__link:focus {
+    &:hover, 
+    &:focus {
     color: var(--accent-color);
+    }
   }
   
   //1200+
@@ -65,12 +66,12 @@
       flex-direction: row;
     }
   }
-  @media screen and (min-width: 1200px) {
-    .header__contact__link {
-      padding-top: 32px;
-      padding-bottom: 32px;
-    }
-  }
+  // @media screen and (min-width: 1200px) {
+  //   .header__contact__link {
+  //     padding-top: 32px;
+  //     // padding-bottom: 32px;
+  //   }
+  // }
  
   @media screen and (min-width: 1200px) {
     .header__contact__item + .header__contact__item {
