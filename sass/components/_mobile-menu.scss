@@ -18,9 +18,9 @@
     flex-direction: column;
     margin-bottom: 48px;
 }
-.contact-list:not(:last-child) {
-  margin-bottom: 32px;
-}
+// .contact-list:not(:last-child) {
+//   margin-bottom: 32px;
+// }
 .mobile-menu__button {
     display: none;
  }
@@ -122,9 +122,9 @@
     margin-bottom: 32px;
   }
 }
-.link.current-item {
-  color: var(--accent-color);
-}
+// .link.current-item {
+//   color: var(--accent-color);
+// }
 
 .mobile-menu__item {
   font-weight: 500;
