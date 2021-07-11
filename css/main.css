@@ -918,6 +918,12 @@ body {
     background-color: var(--accent-color);
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 /*.current-item::after {
 content: '';
 position: absolute;
